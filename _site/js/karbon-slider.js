@@ -1,5 +1,5 @@
 /* Slider */
-JekyllTwilight.slider = function () {
+karbon.slider = function () {
     const slides = [
         {
             image: 'images/slider-images/image01.jpg',

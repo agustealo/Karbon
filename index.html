@@ -13,27 +13,31 @@ title: Web design and development using the latest internet technologies.
     </div>
     <!-- End Title  -->
 
-    <div class="row mx-5">
-        {% for post in site.posts %}
-          {% if post.content contains "<!-- more -->" %}
-            <div class="col-sm-1 widget-bottom line-fx col-4 mx-2">
-              <a href="{{ post.url }}" class="blog-link"> <!-- Added class="blog-link" -->
+    <div class="row g-4 mx-4"> <!-- Added gutter spacing with g-4 -->
+      {% for post in site.posts %}
+        {% if post.content contains "<!-- more -->" %}
+          <div class="col-12 col-md-6 my-4 col-lg-4"> <!-- Responsive columns -->
+            <div class="widget-bottom line-fx h-100"> <!-- Added h-100 for equal height -->
+              <a href="{{ post.url }}" class="blog-link">
                 <div class="bg-fx">
                     <h4>{{ post.title }}</h4>
                     {{ post.content | split:"<!-- more -->" | first }}
-                </div><!-- End Dev-fx -->
+                </div>
               </a>
-            </div><!-- End Postcard -->
-          {% else %}
-            <div class="widget-bottom">
+            </div>
+          </div>
+        {% else %}
+          <div class="col-12 col-md-6 my-4 col-lg-4"> <!-- Responsive columns -->
+            <div class="widget-bottom h-100"> <!-- Added h-100 for equal height -->
               <div class="bg-fx">
                 <div class="inner">
                   <h4>{{ post.title }}</h4>
                   {{ post.content | strip_html | truncatewords:200 }}
                 </div>
-              </div><!-- End Bg-fx -->
-            </div><!-- End Postcard -->
-          {% endif %}
-        {% endfor %}
-    </div><!-- End Row -->
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+  </div>
 </div><!-- End Blog Section --> 

@@ -4,7 +4,6 @@
     background: #2F3238;
     position: relative;
     max-width: 100%;
-    margin: 5em;
     padding: 2.5em;
     display: flex;
     flex-wrap: wrap;
@@ -124,10 +123,8 @@
   }
   
   .widget .wrapper .profile-cv p {
-    margin-top: 6px;
-    margin-left: 1em;
+    margin-top: 1em;
     float: left;
-    width: 55.66667%;
     padding: 0 0.83333%;
   }
   

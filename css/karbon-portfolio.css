@@ -3,7 +3,7 @@
 /* ================================== */
 :root {
   --primary-color: #e9c6eb;       /* Used for .project border, etc. */
-  --secondary-color: #7F82AC;     /* Used for work-nav background */
+  --secondary-color: #7F82AC;     /* Used for portfolio-nav background */
   --fx-color: #7F82DF;            /* Default fx color (active category, etc.) */
   --fx-rgb: 0, 115, 230;          /* Default fx color in RGB (for background fx) */
   --fx-secondary-color: #666;     /* Fallback color for inactive menu items */
@@ -15,7 +15,7 @@
 /* ================================== */
 
 /* Portfolio Nav/Filter */
-.work-nav {
+.portfolio-nav {
   padding-right: 3em;
 }
 
@@ -43,17 +43,19 @@
   padding-left: 1em !important;
 }
 
-.work-nav #filters {
+.portfolio-nav #filters {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.work-nav #filters li {
-  margin-bottom: 30px;
+.portfolio-nav #filters li {
+  line-height: 1.5;
+  display: inline-block;
+  margin-right: 1em;
 }
 
-.work-nav #filters li a {
+.portfolio-nav #filters li a {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -62,8 +64,8 @@
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.work-nav #filters li a:hover,
-.work-nav #filters li a.selected {
+.portfolio-nav #filters li a:hover,
+.portfolio-nav #filters li a.selected {
   color: var(--fx-color);
 }
 
@@ -81,7 +83,6 @@
   cursor: pointer;
   display: inline-flex;
   transition: transform 0.3s ease;
-  max-width: 29.3%;
   box-sizing: border-box; /* Prevent layout issues */
 }
 
@@ -178,7 +179,7 @@ p.widget-description {
 /* ================================== */
 /* Menu & Blog Link Hover Effects     */
 /* ================================== */
-.work-nav #filters li a:hover,
+.portfolio-nav #filters li a:hover,
 .blog-link:hover {
   color: var(--fx-color);
   transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
@@ -189,7 +190,7 @@ p.widget-description {
 /* ================================== */
 
 /* Base link styles */
-.work-nav #filters li a {
+.portfolio-nav #filters li a {
   position: relative;
   display: inline-block;
   padding: 10px 15px;
@@ -198,17 +199,16 @@ p.widget-description {
 }
 
 /* Active state (selected) */
-.work-nav #filters li a.selected {
+.portfolio-nav #filters li a.selected {
   font-weight: bold;
   color: var(--fx-color, #0073e6);
   transform: scale(1.1);
 }
 
 /* Animated Right Indicator */
-.work-nav #filters li a.selected::after {
+.portfolio-nav #filters li a.selected::after {
   content: '';
   position: absolute;
-  right: -10px; /* Adjust for better alignment */
   top: 50%;
   width: 8px;
   height: 8px;
@@ -218,7 +218,7 @@ p.widget-description {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.work-nav #filters li a.selected:hover::after {
+.portfolio-nav #filters li a.selected:hover::after {
   transform: translateY(-50%) scale(0);
   opacity: 0; /* Smoother disappearance */
 }
@@ -255,6 +255,7 @@ p.widget-description {
 /* ================================== */
 .project.line-fx,
 .widget-bottom.line-fx {
+  height: 100%;
   border: 1px solid var(--fx-color);
   box-shadow: inset 0 0 0 3px #2F3238;
   transition: background 0.4s ease-in-out 0.5s;
@@ -391,5 +392,20 @@ p.widget-description {
   .line-fx span::before,
   .line-fx span::after {
     display: none; /* Hide pseudo-elements on mobile */
+  }
+}
+
+/* Responsive Columns - SM */
+@media (min-width: 576px) {
+  .item-thumbs {
+    max-width: 29.3%;
+  }
+
+  .portfolio-nav #filters li a {
+    padding: 10px 20px;
+  }
+
+  .portfolio-nav #filters li a.selected::after {
+    right: -15px;
   }
 }

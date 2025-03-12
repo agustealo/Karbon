@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('Portfolio JS Loaded');
 
-    // Ensure JekyllTwilight is available in global scope
-    window.JekyllTwilight = window.JekyllTwilight || {};
+    // Ensure karbon is available in global scope
+    window.karbon = window.karbon || {};
 
     // **Portfolio Filter Functionality**
-    window.JekyllTwilight.filterWorks = function (filterValue = '*') {
+    window.karbon.filterWorks = function (filterValue = '*') {
         const projects = document.querySelectorAll('.project');
         projects.forEach(project => {
             if (filterValue === '*' || project.classList.contains(filterValue.substring(1))) {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Update active filter styling
-        document.querySelectorAll('.project-filter a').forEach(btn => {
+        document.querySelectorAll('.portfolio-filter a').forEach(btn => {
             btn.classList.remove('selected'); // Remove selected class from all
             if (btn.getAttribute('data-filter') === filterValue) {
                 btn.classList.add('selected'); // Add to the current active filter
@@ -27,21 +27,21 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Select all filter buttons and add event listeners
-    const filters = document.querySelectorAll('.project-filter a');
+    const filters = document.querySelectorAll('.portfolio-filter a');
     filters.forEach(filter => {
         filter.addEventListener('click', function (e) {
             e.preventDefault();
             const filterValue = this.getAttribute('data-filter');
-            window.JekyllTwilight.filterWorks(filterValue);
+            window.karbon.filterWorks(filterValue);
         });
     });
 
     // Ensure filtering runs once on page load
-    window.JekyllTwilight.filterWorks('*');
+    window.karbon.filterWorks('*');
 
     /* --- Masonry Grid - Dynamic Column Layout --- */
     function resizeMasonryGrid() {
-        const grid = document.querySelector('.project-contents');
+        const grid = document.querySelector('.portfolio-contents');
         if (!grid) return; // Prevents calling getComputedStyle on null
 
         const computedStyle = window.getComputedStyle(grid);

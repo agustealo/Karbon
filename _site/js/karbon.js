@@ -1,5 +1,5 @@
 (function () {
-  const JekyllTwilight = window.JekyllTwilight || {};
+  const karbon = window.karbon || {};
 
   /* Utility: Debounce */
   function debounce(func, wait, immediate) {
@@ -18,7 +18,7 @@
   }
 
   /* Mobile Navigation */
-  JekyllTwilight.mobileNav = function () {
+  karbon.mobileNav = function () {
     const windowWidth = window.innerWidth;
     const mobileNavToggle = document.getElementById('mobile-nav');
     let navigationMobile = document.getElementById('navigation-mobile');
@@ -45,7 +45,7 @@
     }
   };
 
-  JekyllTwilight.listenerMenu = function () {
+  karbon.listenerMenu = function () {
     const mobileNavToggle = document.getElementById('mobile-nav');
     const navigationMobile = document.getElementById('navigation-mobile');
     if (mobileNavToggle && navigationMobile) {
@@ -65,7 +65,7 @@
   };
 
   /* Sticky Navigation */
-  JekyllTwilight.nav = function () {
+  karbon.nav = function () {
     const stickyNav = document.querySelector('.sticky-nav');
     if (stickyNav) {
       const observer = new IntersectionObserver(entries => {
@@ -76,7 +76,7 @@
   };
 
   /* Scroll to Top */
-  JekyllTwilight.scrollToTop = function () {
+  karbon.scrollToTop = function () {
     const arrow = document.getElementById('back-to-top');
     if (!arrow) return;
 
@@ -92,15 +92,15 @@
 
   /* Initialization */
   document.addEventListener('DOMContentLoaded', function () {
-    console.log('JekyllTwilight: DOMContentLoaded event fired.');
-    JekyllTwilight.slider();
-    JekyllTwilight.nav();
-    JekyllTwilight.mobileNav();
-    JekyllTwilight.listenerMenu();
-    JekyllTwilight.scrollToTop();
+    console.log('karbon: DOMContentLoaded event fired.');
+    karbon.slider();
+    karbon.nav();
+    karbon.mobileNav();
+    karbon.listenerMenu();
+    karbon.scrollToTop();
   });
 
-  window.addEventListener('resize', debounce(JekyllTwilight.mobileNav, 250));
+  window.addEventListener('resize', debounce(karbon.mobileNav, 250));
 
-  window.JekyllTwilight = JekyllTwilight;
+  window.karbon = karbon;
 })();

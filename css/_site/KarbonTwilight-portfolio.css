@@ -3,7 +3,7 @@
 /* ================================== */
 :root {
   --primary-color: #e9c6eb;       /* Used for .project border, etc. */
-  --secondary-color: #7F82AC;     /* Used for work-nav background */
+  --secondary-color: #7F82AC;     /* Used for portfolio-nav background */
   --fx-color: #7F82DF;            /* Default fx color (active category, etc.) */
   --fx-rgb: 0, 115, 230;          /* Default fx color in RGB (for background fx) */
   --fx-secondary-color: #666;     /* Fallback color for inactive menu items */
@@ -15,7 +15,7 @@
 /* ================================== */
 
 /* Portfolio Nav/Filter */
-.work-nav {
+.portfolio-nav {
   padding-right: 3em;
 }
 
@@ -43,17 +43,17 @@
   padding-left: 1em !important;
 }
 
-.work-nav #filters {
+.portfolio-nav #filters {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.work-nav #filters li {
+.portfolio-nav #filters li {
   margin-bottom: 30px;
 }
 
-.work-nav #filters li a {
+.portfolio-nav #filters li a {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -62,8 +62,8 @@
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.work-nav #filters li a:hover,
-.work-nav #filters li a.selected {
+.portfolio-nav #filters li a:hover,
+.portfolio-nav #filters li a.selected {
   color: var(--fx-color);
 }
 
@@ -178,7 +178,7 @@ p.widget-description {
 /* ================================== */
 /* Menu & Blog Link Hover Effects     */
 /* ================================== */
-.work-nav #filters li a:hover,
+.portfolio-nav #filters li a:hover,
 .blog-link:hover {
   color: var(--fx-color);
   transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
@@ -189,7 +189,7 @@ p.widget-description {
 /* ================================== */
 
 /* Base link styles */
-.work-nav #filters li a {
+.portfolio-nav #filters li a {
   position: relative;
   display: inline-block;
   padding: 10px 15px;
@@ -198,14 +198,14 @@ p.widget-description {
 }
 
 /* Active state (selected) */
-.work-nav #filters li a.selected {
+.portfolio-nav #filters li a.selected {
   font-weight: bold;
   color: var(--fx-color, #0073e6);
   transform: scale(1.1);
 }
 
 /* Animated Right Indicator */
-.work-nav #filters li a.selected::after {
+.portfolio-nav #filters li a.selected::after {
   content: '';
   position: absolute;
   right: -10px; /* Adjust for better alignment */
@@ -218,7 +218,7 @@ p.widget-description {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.work-nav #filters li a.selected:hover::after {
+.portfolio-nav #filters li a.selected:hover::after {
   transform: translateY(-50%) scale(0);
   opacity: 0; /* Smoother disappearance */
 }

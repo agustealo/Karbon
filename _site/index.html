@@ -54,11 +54,11 @@
     <header>
   <div class="sticky-nav">
     <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-    <div id="logo">
+    <div id="logo" class="col-12 col-md-3">
       <a id="goUp" href="" title="Jekyll Twilight | Responsive One Page Template">Agustealo</a>
     </div>
     <nav id="menu">
-      <ul id="menu-nav">
+      <ul id="menu-nav" col-12 col-md-9>
         <li class="current"><a href="home-slider">Home</a></li>
         <li><a href="/about.html">About Me</a></li>
         <li><a href="latest">Latest Dev</a></li>
@@ -73,10 +73,10 @@
     <!-- Our Work Section -->
     
   <div class="container-wider mv-5">
-    <div class="widget">
+    <div class="widget m-4">
 	<div class="wrapper">
 	  <div class="row">
-		<div class="col-md-3">
+		<div class="col-lg-5 col-12">
 		  <div class="profile-cv">
 			<div class="profile-top">
 			  <div class="profile-img">
@@ -87,20 +87,10 @@
 			  Web site: <a href="http:www.agustealo.com">www.agustealo.com</a>
 			  </p>
 			</div>
-			<div class="profile-bttm">
-			  <div class="social">
-				<ul class="social-icons">
-				  <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-				  <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-				  <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-				  <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
-				</ul>
-			  </div>
-			</div>
 		  </div>
 		</div>
   
-		<div class="col-md-9">
+		<div class="col-lg-7 col-12">
 		  <div class="web-container">
 			<div class="web-intro">
 			  <h1>Front End Developer | Designer</h1>
@@ -114,7 +104,7 @@
 	</div>
   </div>
   </div>
-  <div class="container-fluid py-gap">
+  <div class="container-fluid pb-4 py-gap">
     
     <!-- Title Page -->
     <div class="row">
@@ -130,9 +120,9 @@
     <div class="container">
       <div class="row">
       <!-- Filter Menu -->
-      <div class="menu-area">
-        <nav id="options" class="work-nav">
-          <ul id="filters" class="project-filter">
+      <div class="menu-area col-12 col-md-3">
+        <nav class="portfolio-nav">
+          <ul id="filters" class="portfolio-filter">
             <li class="type-work">Type of Work</li>
             <li><a href="#filter" data-filter="*" class="selected">All Projects</a></li>
             <li><a href="#filter" data-filter=".wordpress">Wordpress</a></li>
@@ -143,10 +133,10 @@
       </div>
 
       <!-- Portfolio Grid -->
-      <div class="col-9 col-md-12">
-        <ul class="project-contents row">
+      <div class="col-12 col-md-9">
+        <ul class="portfolio-contents row">
           <!-- Item Project and Filter Name -->
-          <li class="project line-fx portfolio-item item-thumbs work-thumb wordpress col-4 col-md-12 col-lg-6">
+          <li class="project line-fx portfolio-item item-thumbs work-thumb wordpress col-12 col-md-4">
             <div class="bg-fx" data-modal="modal-1">
               <img src="images/work/thumbs/image-01.png" alt="wordpress">
             </div>
@@ -154,7 +144,7 @@
           <!-- End Item Project -->
 
           <!-- Item Project and Filter Name -->
-          <li class="project line-fx portfolio-item item-thumbs work-thumb wordpress col-4 col-md-12 col-lg-6">
+          <li class="project line-fx portfolio-item item-thumbs work-thumb wordpress col-12 col-md-4">
             <div class="bg-fx" data-modal="modal-2">
               <img src="images/work/thumbs/image-02.png" alt="wordpress">
             </div>
@@ -162,7 +152,7 @@
           <!-- End Item Project -->
 
           <!-- Item Project and Filter Name -->
-          <li class="project line-fx portfolio-item item-thumbs work-thumb wordpress col-4 col-md-12 col-lg-6">
+          <li class="project line-fx portfolio-item item-thumbs work-thumb wordpress col-12 col-md-4">
             <div class="bg-fx" data-modal="modal-3">
               <img src="images/work/thumbs/image-03.png" alt="wordpress">
             </div>
@@ -170,7 +160,7 @@
           <!-- End Item Project -->
 
           <!-- Item Project and Filter Name -->
-          <li class="project line-fx portfolio-item item-thumbs work-thumb video col-4 col-md-12 col-lg-6">
+          <li class="project line-fx portfolio-item item-thumbs work-thumb video col-12 col-md-4">
             <div class="bg-fx" data-modal="modal-4">
               <img src="images/work/thumbs/image-04.png" alt="Video">
             </div>
@@ -178,7 +168,7 @@
           <!-- End Item Project -->
 
           <!-- Item Project and Filter Name -->
-          <li class="project line-fx portfolio-item item-thumbs work-thumb snippets col-4 col-md-12 col-lg-6">
+          <li class="project line-fx portfolio-item item-thumbs work-thumb snippets col-12 col-md-4">
             <div class="bg-fx" data-modal="modal-5">
               <img src="images/work/thumbs/image-05.png" alt="snippets">
             </div>
@@ -186,7 +176,7 @@
           <!-- End Item Project -->
 
           <!-- Item Project and Filter Name -->
-          <li class="project line-fx portfolio-item item-thumbs work-thumb wordpress col-4 col-md-12 col-lg-6">
+          <li class="project line-fx portfolio-item item-thumbs work-thumb wordpress col-12 col-md-4">
             <div class="bg-fx" data-modal="modal-6">
               <img src="images/work/thumbs/image-06.png" alt="wordpress">
             </div>
@@ -211,44 +201,48 @@
     </div>
     <!-- End Title  -->
 
-    <div class="row mx-5">
+    <div class="row g-4 mx-4"> <!-- Added gutter spacing with g-4 -->
+      
         
-          
-            <div class="col-sm-1 widget-bottom line-fx col-4 mx-2">
-              <a href="/self-marketing-for-freelance-designers/" class="blog-link"> <!-- Added class="blog-link" -->
+          <div class="col-12 col-md-6 my-4 col-lg-4"> <!-- Responsive columns -->
+            <div class="widget-bottom line-fx h-100"> <!-- Added h-100 for equal height -->
+              <a href="/blog/2025/03/11/seo-optimization-jekyll.html" class="blog-link">
                 <div class="bg-fx">
-                    <h4>Self Marketing For Freelance Designers</h4>
-                    <p class="widget-description"> Self-marketing for freelance designers is very important. Although you might undoubtedly be great at what you do, in the freelance business, skills is not enough. Competing in today's economy can be rough, it almost seems like they're 100 designers for every 1 client willing to hire.</p>
-
-                </div><!-- End Dev-fx -->
+                    <h4>How to Optimize Your Jekyll Site for SEO</h4>
+                    <p>Many believe <strong>static sites lack SEO capabilities</strong>, but <strong>Jekyll proves them wrong</strong>. With the right setup, your site can <strong>outrank WordPress blogs</strong> on search engines.
+                </div>
               </a>
-            </div><!-- End Postcard -->
-          
+            </div>
+          </div>
         
-          
-            <div class="col-sm-1 widget-bottom line-fx col-4 mx-2">
-              <a href="/understanding-css-size-properties/" class="blog-link"> <!-- Added class="blog-link" -->
+      
+        
+          <div class="col-12 col-md-6 my-4 col-lg-4"> <!-- Responsive columns -->
+            <div class="widget-bottom line-fx h-100"> <!-- Added h-100 for equal height -->
+              <a href="/blog/2025/03/11/mastering-markdown.html" class="blog-link">
                 <div class="bg-fx">
-                    <h4>CSS Size Properties</h4>
-                    <p class="widget-description"> I was asked a question today by a friend who is learning web design. She wanted to know the difference between CSS size properties and methods, why use PX vs PT for fonts, or 100% vs EM. I would like to start by saying I&#8217;m not an expert on the matter but I will try to explain as best as I understand without a over complicated explanation.</p>
-
-                </div><!-- End Dev-fx -->
+                    <h4>Mastering Markdown: The Essential Guide</h4>
+                    <p>Markdown is the <strong>simplest and most powerful</strong> way to format content for web publishing. Whether you’re a blogger, developer, or writer, <strong>Markdown streamlines your workflow</strong>.
+                </div>
               </a>
-            </div><!-- End Postcard -->
-          
+            </div>
+          </div>
         
-          
-            <div class="col-sm-1 widget-bottom line-fx col-4 mx-2">
-              <a href="/things-a-designer-hates-hear/" class="blog-link"> <!-- Added class="blog-link" -->
+      
+        
+          <div class="col-12 col-md-6 my-4 col-lg-4"> <!-- Responsive columns -->
+            <div class="widget-bottom line-fx h-100"> <!-- Added h-100 for equal height -->
+              <a href="/blog/2025/03/11/future-of-web-design.html" class="blog-link">
                 <div class="bg-fx">
-                    <h4>Things a designer hates to hear</h4>
-                    <p>Ok, here is a list of things myself and my fellow designers hates to hear from our clients. I dub this post “Things a designer hates to hear”.
-                </div><!-- End Dev-fx -->
+                    <h4>The Future of Web Design: Simplicity Meets AI</h4>
+                    <p>Web design is no longer about cluttered pages and complex layouts. The <strong>new era of digital experiences</strong> is all about <strong>minimalism, responsiveness, and AI-driven content generation</strong>.
+                </div>
               </a>
-            </div><!-- End Postcard -->
-          
+            </div>
+          </div>
         
-    </div><!-- End Row -->
+      
+  </div>
 </div><!-- End Blog Section --> 
     <!-- End About Section -->
 </div>
@@ -257,7 +251,7 @@
 <!-- Socialize -->
 <div id="social-area">
     <div class="row">
-        <div class="col-10">
+        <div class="col-10 pt-4 mx-auto">
             <nav id="social" class="py-5">
                 <ul>
                     <li>
@@ -398,9 +392,9 @@
 </a>
 <!-- End Back to Top -->
 <!-- Js -->
-<script src="http://localhost:4000/js/JekyllTwilight.js"></script> <!-- Theme default JS -->
-<script src="http://localhost:4000/js/JekyllTwilight-slider.js"></script> <!-- Slider JS -->
-<script src="http://localhost:4000/js/JekyllTwilight-portfolio.js"></script>
+<script src="http://localhost:4000/js/karbon.js"></script> <!-- Theme default JS -->
+<script src="http://localhost:4000/js/karbon-slider.js"></script> <!-- Slider JS -->
+<script src="http://localhost:4000/js/karbon-portfolio.js"></script>
 
 </body>
 
