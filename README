@@ -1,86 +1,72 @@
 # Karbon v0.9.1 (Twilight): A Jekyll Theme
-🌅 The Evolution of Karbon Twilight: 11 Years in the Making
-Karbon Twilight
 
-In an era where the digital landscape has rapidly transformed from Web 2.0 to the dawn of AI-powered web experiences, Karbon Twilight emerges as a modern, refined evolution of the original Karbon project. Over the last 11 years, Karbon has served as a foundation for premium projects, offering a sleek and customizable user experience. Now, reimagined as Karbon Twilight, it provides greater flexibility, modularity, and long-term sustainability—embracing the needs of a web ecosystem where simplicity and adaptability are paramount.
+## 🌅 The Evolution of Karbon Twilight: A 11 Year Revamp!
 
-With Karbon Twilight, you get a powerful, vanilla Jekyll-based theme that is lightweight, developer-friendly, and future-proof.
+[![Karbon Twilight](https://agustealo.github.io/images/Web-design-and-development-using-the-latest-internet-technologies.png)](https://agustealo.github.io)
 
-🔎 What is Jekyll, and Why Does It Matter?
-Jekyll is a static site generator built on Ruby, widely used for personal blogs, documentation, and portfolio sites. Unlike traditional CMS platforms that rely on databases, Jekyll generates lightweight, high-performance static sites, making it an ideal choice for developers looking for:
+In an era where the digital landscape has rapidly transformed from **Web 2.0** to the dawn of **AI-powered web experiences**, Karbon Twilight emerges as a modern, refined evolution of the original Karbon project. Over the last **11 years**, Karbon has served as a foundation for premium projects, offering a sleek and customizable user experience. Now, reimagined as **Karbon Twilight**, it provides greater flexibility, modularity, and long-term sustainability—embracing the needs of a web ecosystem where simplicity and adaptability are paramount.
 
-Speed & Security: No database, reducing security risks and improving load times.
+With **Karbon Twilight**, you get a powerful, **vanilla Jekyll-based** theme that is lightweight, developer-friendly, and future-proof.
 
-Version Control Friendly: Seamlessly integrates with GitHub Pages for free hosting.
+## 🔎 What is Jekyll, and Why Does It Matter?
 
-Minimalist and Developer-Friendly: Focuses on content, with flexibility for customization.
+Jekyll is a **static site generator** built on Ruby, widely used for personal blogs, documentation, and portfolio sites. Unlike traditional CMS platforms that rely on databases, Jekyll generates **lightweight, high-performance static sites**, making it an ideal choice for developers looking for:
+- **Speed & Security**: No database, reducing security risks and improving load times.
+- **Version Control Friendly**: Seamlessly integrates with GitHub Pages for free hosting.
+- **Minimalist and Developer-Friendly**: Focuses on content, with flexibility for customization.
+- **Low Maintenance**: No need for frequent updates or patches.
+- **High Scalability**: Easily manage content with Markdown, keeping the site structure clean and efficient.
 
-Low Maintenance: No need for frequent updates or patches.
+As AI-driven content generation grows, **Jekyll’s simplicity and static nature** offer an alternative to the heavy, dynamic frameworks dominating modern web development. With **Karbon Twilight**, Jekyll remains as relevant as ever—providing a structured, **low-maintenance**, and **scalable** approach to modern website building.
 
-High Scalability: Easily manage content with Markdown, keeping the site structure clean and efficient.
+## 🛠️ Features of Karbon Twilight
 
-As AI-driven content generation grows, Jekyll’s simplicity and static nature offer an alternative to the heavy, dynamic frameworks dominating modern web development. With Karbon Twilight, Jekyll remains as relevant as ever—providing a structured, low-maintenance, and scalable approach to modern website building.
+- **Minimalist & Modern Design** – A clean, distraction-free interface.
+- **Fully Responsive** – Optimized for all screen sizes.
+- **SEO-Friendly** – Built-in best practices for search engine optimization.
+- **Social Media Integration** – Easily connect with your audience.
+- **Fast & Secure** – Static architecture for optimal speed and security.
+- **Easy Installation & Configuration** – Simple setup for all users.
+- **Enhanced Performance** – Optimized codebase for faster load times.
+- **Integrated Markdown Support** – Write content effortlessly with Markdown.
+- **Customizable Widgets** – Personalize sidebars and key sections.
+- **AI Readiness** – Works seamlessly alongside AI-powered content tools.
 
-🛠️ Features of Karbon Twilight
-Minimalist & Modern Design – A clean, distraction-free interface.
+## 📦 Quick Installation
 
-Fully Responsive – Optimized for all screen sizes.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/agustealo/jekyll-twilight.git
+   cd jekyll-twilight
+   ```
+2. **Install Dependencies**
+   ```bash
+   bundle install
+   ```
+3. **Run Jekyll Server**
+   ```bash
+   bundle exec jekyll serve
+   ```
+   Your site will be available at **[http://localhost:4000](http://localhost:4000)**.
 
-SEO-Friendly – Built-in best practices for search engine optimization.
+## 🔧 Customization
 
-Social Media Integration – Easily connect with your audience.
-
-Fast & Secure – Static architecture for optimal speed and security.
-
-Easy Installation & Configuration – Simple setup for all users.
-
-Enhanced Performance – Optimized codebase for faster load times.
-
-Integrated Markdown Support – Write content effortlessly with Markdown.
-
-Customizable Widgets – Personalize sidebars and key sections.
-
-AI Readiness – Works seamlessly alongside AI-powered content tools.
-
-📦 Quick Installation
-Clone the Repository
-
-bash
-Copy
-git clone https://github.com/agustealo/jekyll-twilight.git
-cd jekyll-twilight
-Install Dependencies
-
-bash
-Copy
-bundle install
-Run Jekyll Server
-
-bash
-Copy
-bundle exec jekyll serve
-Your site will be available at http://localhost:4000.
-
-🔧 Customization
 Modify key elements by editing:
-
-_config.yml – Site-wide settings.
-
-_layouts/ – Define page structures.
-
-assets/css/JekyllTwilight.css – Customize styles.
-
-_includes/ – Modify modular site components such as headers and footers.
+- `_config.yml` – Site-wide settings.
+- `_layouts/` – Define page structures.
+- `assets/css/JekyllTwilight.css` – Customize styles.
+- `_includes/` – Modify modular site components such as headers and footers.
 
 Example to change the primary color:
-
-css
-Copy
+```css
 :root {
   --primary-color: #3498db; /* Update to preferred color */
 }
-📁 Essential Project Structure
-Copy
+```
+
+## 📁 Essential Project Structure
+
+```
 📦 Karbon Twilight
  ┣ 📂_includes → Modular components (headers, footers, widgets)
  ┣ 📂_layouts → Page layouts (home, post, page)
@@ -93,91 +79,121 @@ Copy
  ┣ 📜README.md → Documentation & setup guide
  ┣ 📜CONTRIBUTING.md → Contribution guidelines
  ┗ 📜LICENSE → Licensing details
-🎥 Demo Video
-YouTube
+```
+
+## 🎥 Demo Video
+
+[![YouTube](http://i.ytimg.com/vi/HVFvPAbnSjQ/hqdefault.jpg)](https://www.youtube.com/watch?v=HVFvPAbnSjQ)
 
 Click the image above to watch the demo video!
 
-📜 License & Credits
-Licensed Under: MIT License.
+## 📜 License & Credits
 
-Developed By: Agustealo Johnson
+- **Licensed Under:** MIT License.
+- **Developed By:** [Agustealo Johnson](https://agustealo.com)
+- **Inspired By:** Modern web development principles.
+- **Built With:** Jekyll, HTML5, CSS3, JavaScript.
 
-Inspired By: Modern web development principles.
+## 🤝 Contributing
 
-Built With: Jekyll, HTML5, CSS3, JavaScript.
+We welcome contributions! Check the [CONTRIBUTING.md](https://github.com/agustealo/Karbon/blob/main/CONTRIBUTING.md) for guidelines.
 
-🤝 Contributing
-We welcome contributions! Check the CONTRIBUTING.md for guidelines.
+## 📧 Need Support?
 
-📧 Need Support?
-For questions, reach out to Agustealo Johnson.
+For questions, reach out to **Agustealo Johnson**.
 
-🌟 Experience Karbon Twilight
-Try the Live Demo now!
+## 🌟 Experience Karbon Twilight
 
-Why Choose Karbon Twilight?
-Karbon Twilight isn't just another theme; it's the product of over a decade of refinement, adaptation, and innovation. As the web evolves towards AI-assisted content management, lightweight performance, and flexibility, this theme provides the foundation for the next era of digital experiences.
+Try the **[Live Demo](https://agustealo.github.io)** now!
+
+---
+
+### Why Choose Karbon Twilight?
+
+Karbon Twilight isn't just another theme; it's the product of over a **decade** of refinement, adaptation, and innovation. As the web evolves towards **AI-assisted content management**, **lightweight performance**, and **flexibility**, this theme provides the foundation for the next era of digital experiences. 
 
 Whether you're a developer, blogger, designer, or tech enthusiast—Karbon Twilight offers the perfect blend of simplicity, performance, and customization.
 
-Embrace the future of the web. Experience Karbon Twilight today.
+**Embrace the future of the web. Experience Karbon Twilight today.**
 
-Detailed Features and Benefits
-Minimalist & Modern Design
+---
+
+## Detailed Features and Benefits
+
+### Minimalist & Modern Design
+
 The design philosophy behind Karbon Twilight is rooted in minimalism. The theme avoids unnecessary clutter, ensuring that your content takes center stage. This approach not only enhances readability but also improves user engagement by reducing distractions.
 
-Fully Responsive
+### Fully Responsive
+
 In today's multi-device world, having a responsive website is non-negotiable. Karbon Twilight is designed to look great on all screen sizes, from desktops to smartphones. The responsive design ensures that your site is accessible and functional, no matter how your audience chooses to view it.
 
-SEO-Friendly
+### SEO-Friendly
+
 Search Engine Optimization (SEO) is crucial for visibility. Karbon Twilight comes with built-in SEO best practices, including meta tags, alt attributes for images, and clean URL structures. These features help improve your site's ranking on search engines, driving more organic traffic to your content.
 
-Social Media Integration
+### Social Media Integration
+
 Social media is a powerful tool for audience engagement. Karbon Twilight makes it easy to integrate your social media profiles, allowing visitors to connect with you on various platforms. This integration can help grow your social media following and increase your content's reach.
 
-Fast & Secure
+### Fast & Secure
+
 Static sites generated by Jekyll are inherently fast and secure. Without a database, there are fewer vulnerabilities to exploit, and the absence of server-side processing ensures quick load times. Karbon Twilight leverages these advantages, providing a secure and speedy browsing experience.
 
-Easy Installation & Configuration
+### Easy Installation & Configuration
+
 Setting up Karbon Twilight is straightforward, even for those new to Jekyll. The theme comes with detailed documentation and a simple configuration process, allowing you to get your site up and running quickly. Whether you're a seasoned developer or a beginner, you'll find the setup process intuitive and hassle-free.
 
-Enhanced Performance
+### Enhanced Performance
+
 Performance optimization is a key focus of Karbon Twilight. The theme's codebase is streamlined to ensure fast load times, which is crucial for retaining visitors and improving SEO rankings. By minimizing unnecessary code and optimizing assets, Karbon Twilight delivers a smooth and efficient user experience.
 
-Integrated Markdown Support
+### Integrated Markdown Support
+
 Markdown is a lightweight markup language that allows you to format text easily. Karbon Twilight supports Markdown, making it simple to write and format content without needing to know HTML. This feature is particularly useful for bloggers and content creators who want to focus on writing rather than coding.
 
-Customizable Widgets
+### Customizable Widgets
+
 Widgets are a great way to add functionality and personalization to your site. Karbon Twilight includes customizable widgets that you can easily configure to suit your needs. Whether you want to add a recent posts section, a tag cloud, or social media links, the theme provides the flexibility to do so.
 
-AI Readiness
+### AI Readiness
+
 As AI becomes increasingly integrated into web development, Karbon Twilight is designed to work seamlessly with AI-powered tools. Whether you're using AI for content generation, analytics, or user interaction, the theme's flexible architecture ensures compatibility and ease of integration.
 
-Advanced Customization Tips
-Customizing the Layout
-To customize the layout of your site, navigate to the _layouts directory. Here, you'll find templates for different types of pages, such as the homepage, blog posts, and standard pages. You can modify these templates to change the structure and appearance of your site.
+## Advanced Customization Tips
 
-Adding Custom CSS
-For more advanced styling, you can add custom CSS to the assets/css/JekyllTwilight.css file. This allows you to override the default styles and create a unique look for your site. For example, you can change the font, adjust spacing, or add custom animations.
+### Customizing the Layout
 
-Using Includes
-The _includes directory contains reusable components like headers, footers, and widgets. By modifying these files, you can make site-wide changes without having to edit each page individually. This modular approach makes it easier to maintain and update your site.
+To customize the layout of your site, navigate to the `_layouts` directory. Here, you'll find templates for different types of pages, such as the homepage, blog posts, and standard pages. You can modify these templates to change the structure and appearance of your site.
 
-Configuring the _config.yml File
-The _config.yml file is where you can configure site-wide settings, such as the site title, description, and social media links. You can also enable or disable certain features, like comments or analytics, by editing this file. Make sure to restart the Jekyll server after making changes to see the updates.
+### Adding Custom CSS
 
-Troubleshooting Common Issues
-Dependency Errors
-If you encounter errors during the installation process, ensure that you have the correct versions of Ruby and Bundler installed. You can check the required versions in the Gemfile and update your environment accordingly.
+For more advanced styling, you can add custom CSS to the `assets/css/JekyllTwilight.css` file. This allows you to override the default styles and create a unique look for your site. For example, you can change the font, adjust spacing, or add custom animations.
 
-Page Not Updating
-If changes to your site are not reflected, try clearing the Jekyll cache by running jekyll clean before serving the site again. This ensures that all cached files are removed and the site is rebuilt from scratch.
+### Using Includes
 
-Custom CSS Not Applying
+The `_includes` directory contains reusable components like headers, footers, and widgets. By modifying these files, you can make site-wide changes without having to edit each page individually. This modular approach makes it easier to maintain and update your site.
+
+### Configuring the `_config.yml` File
+
+The `_config.yml` file is where you can configure site-wide settings, such as the site title, description, and social media links. You can also enable or disable certain features, like comments or analytics, by editing this file. Make sure to restart the Jekyll server after making changes to see the updates.
+
+## Troubleshooting Common Issues
+
+### Dependency Errors
+
+If you encounter errors during the installation process, ensure that you have the correct versions of Ruby and Bundler installed. You can check the required versions in the `Gemfile` and update your environment accordingly.
+
+### Page Not Updating
+
+If changes to your site are not reflected, try clearing the Jekyll cache by running `jekyll clean` before serving the site again. This ensures that all cached files are removed and the site is rebuilt from scratch.
+
+### Custom CSS Not Applying
+
 If your custom CSS changes are not applying, make sure that the file is correctly linked in the HTML template. Also, check for any syntax errors in your CSS file that might prevent it from being processed correctly.
 
-Conclusion
+## Conclusion
+
 Karbon Twilight is more than just a Jekyll theme; it's a comprehensive solution for building modern, high-performance websites. With its minimalist design, robust features, and ease of customization, it caters to a wide range of users, from developers to content creators. As the web continues to evolve, Karbon Twilight stands ready to meet the challenges of the future, offering a flexible and scalable platform for your digital presence.
 
-Embrace the future of the web. Experience Karbon Twilight today.
+**Embrace the future of the web. Experience Karbon Twilight today.**
