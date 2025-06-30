@@ -1,145 +1,164 @@
-# Karbon Twilight v0.9.1 (Twilight)
+# 🌘 Karbon Twilight
 
-  <a href="https://agustealo.github.io"><img src="https://agustealo.github.io/images/Web-design-and-development-using-the-latest-internet-technologies.png" alt="Karbon Twilight Demo" width="600"></a>
+> A sleek, minimalist Jekyll theme built for modern creators.
 
-![Version](https://img.shields.io/github/v/release/agustealo/jekyll-twilight)  
-![License: MIT](https://img.shields.io/github/license/agustealo/jekyll-twilight)  
-![Downloads](https://img.shields.io/github/downloads/agustealo/jekyll-twilight/total)  
-[![Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue)](https://agustealo.github.io)
-
-**Karbon Twilight** is a lightweight, **vanilla Jekyll** theme reimagined for the modern web—minimal, SEO-friendly, and AI-ready. Perfect for blogs, portfolios, and documentation sites seeking lightning-fast performance and zero server-side overhead.
+[![Demo Video](http://i.ytimg.com/vi/HVFvPAbnSjQ/hqdefault.jpg)](https://www.youtube.com/watch?v=HVFvPAbnSjQ)
+📺 **Click the image to watch the demo!**
 
 ---
 
-## 🔥 Why Karbon Twilight?
+**Jekyll Twilight** delivers a distraction-free, elegant experience. Whether you're a developer, designer, or dreamer — showcase your work with style.
 
-- **Blazing Fast** – Static pages mean millisecond load times.  
-- **Rock-Solid Security** – No database, no dynamic code.  
-- **GitHub Pages–First** – Free hosting & instant deploys.  
-- **Developer-Friendly** – Markdown-driven workflow, flexible layouts.  
-- **AI-Ready** – Integrates seamlessly with generative-AI pipelines.  
-- **Fully Responsive** – Pixel-perfect on every device.
+👉 [Live Demo](https://agustealo.github.io) | [Installation](#-quick-start) | [Docs](#-configuration) | [License](#-license)
 
 ---
 
-## 🎥 Live Demo
+## ✨ Overview
 
-Explore a working example:  
-➡️ https://agustealo.github.io
+![Jekyll Twilight](https://agustealo.github.io/images/Web-design-and-development-using-the-latest-internet-technologies.png)
+
+Jekyll Twilight is the ultimate theme for creators who value simplicity and style. It features a modern interface, mobile-first design, and seamless integration with your social presence.
 
 ---
 
-## 📥 Download & Installation
+## 🔧 Features
 
-### 1. Clone the repo
+* ✅ **Minimalist UI** – Clean, focused layout
+* 📱 **Responsive** – Flawless on desktop, tablet, and mobile
+* 📣 **Social Widgets** – Plug-and-play profile links
+* 🧩 **Custom Widgets** – Easily extend sidebar content
+* 🔍 **SEO Ready** – Structured for optimal visibility
+* ⚡ **Fast Setup** – Launch your site in minutes
+* 🛠️ **Flexible Config** – Tweak to match your brand
+* 📚 **Full Documentation** – No guesswork setup
+
+---
+
+## 📦 Quick Start
+
 ```bash
-git clone https://github.com/agustealo/jekyll-twilight.git my-site
-cd my-site
-```
-
-### 2. Install dependencies
-```bash
+git clone https://github.com/agustealo/jekyll-twilight.git
+cd jekyll-twilight
 bundle install
-```
-
-### 3. Preview locally
-```bash
 bundle exec jekyll serve
 ```
-Visit <http://localhost:4000> in your browser.
 
-### 4. Deploy to GitHub Pages
-Just push to your `gh-pages` or `main` branch with `theme: jekyll-twilight` in `_config.yml`.
-
-> **Pro tip:** You can also scaffold directly:
-> ```bash
-> jekyll new my-blog https://github.com/agustealo/jekyll-twilight.git
-> cd my-blog
-> bundle exec jekyll serve
-> ```
+Your site runs at [http://localhost:4000](http://localhost:4000)
 
 ---
 
-## 🚀 Features
+## 🧩 Configuration
 
-| Category         | Highlights                                                  |
-|------------------|-------------------------------------------------------------|
-| **Design**       | Minimalist, distraction-free interface                      |
-| **Performance**  | Optimized assets, no runtime JS frameworks                  |
-| **SEO**          | Semantic HTML, meta tags, clean URLs                        |
-| **Social**       | Built-in share buttons and Open Graph support               |
-| **Customization**| Configurable layouts, CSS variables                         |
-| **Markdown**     | Full Markdown support with Liquid templating                |
-| **Widgets**      | Modular includes for sidebars, footers, components          |
-| **Accessibility**| WAI-ARIA roles, keyboard navigable                          |
-| **AI-Friendly**  | Ideal for integration with AI content generation tools      |
-
----
-
-## 🛠️ Configuration
-
-Edit `_config.yml` to tune your site:
+Edit `_config.yml` to personalize your site:
 
 ```yaml
-title: "My Awesome Site"
-description: "A blazing fast Jekyll site powered by Karbon Twilight."
-theme: jekyll-twilight
-author:
-  name: "Your Name"
-  email: you@example.com
-# Social links
-social:
-  twitter: your_handle
-  github:  your_username
-# Color customization
-sass:
-  style: compressed
-  load_paths:
-    - _sass
+title: My Awesome Site
+description: Built with Jekyll Twilight
+author: Agustealo Johnson
+email: your@email.com
+baseurl: "" # Only change if using a subfolder
+url: "https://yourdomain.com"
+social_links:
+  github: yourusername
+  linkedin: yourusername
+  twitter: yourusername
 ```
 
-Override CSS variables in `assets/css/JekyllTwilight.css`:
+---
+
+## 🎨 Customization
+
+### 📁 Layouts
+
+* `_layouts/home.html` – Homepage
+* `_layouts/post.html` – Blog post
+* `_layouts/page.html` – Static pages
+
+### 🧱 Includes
+
+* `_includes/header.html` – Header area
+* `_includes/footer.html` – Footer
+* `_includes/social-links.html` – Social icons
+* `_includes/widget.html` – Sidebar widget support
+
+### 🎨 Styles
+
+Modify `assets/css/JekyllTwilight.css`:
 
 ```css
 :root {
-  --primary-color: #e67e22;
-  --accent-color:  #3498db;
+  --primary-color: #e91e63; /* Hot pink just because */
 }
 ```
 
 ---
 
-## 📸 Screenshots
+## 🗂 Project Structure
 
-<p align="center">
-  <img src="https://agustealo.github.io/images/karbon-twilight-screenshot-1.png" alt="Home page" width="48%">
-  <img src="https://agustealo.github.io/images/karbon-twilight-screenshot-2.png" alt="Post layout" width="48%">
-</p>
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository  
-2. Create a feature branch: `git checkout -b feature/your-feature`  
-3. Commit your changes: `git commit -m "Add your feature"`  
-4. Push and open a Pull Request  
-
-See [CONTRIBUTING.md](https://github.com/agustealo/Karbon/blob/main/CONTRIBUTING.md) for full guidelines.
-
----
-
-## 💬 Support
-
-- **Discussions & Issues**: https://github.com/agustealo/jekyll-twilight/discussions  
-- **Email**: agustealo@example.com
+```
+jekyll-twilight/
+├── _includes/
+│   ├── components/
+│   ├── footer.html
+│   ├── header.html
+│   ├── navigation.html
+│   └── widget.html
+├── _layouts/
+│   ├── default.html
+│   ├── home.html
+│   ├── page.html
+│   └── post.html
+├── _posts/
+├── _site/
+├── assets/
+│   ├── css/
+│   └── js/
+├── images/
+├── Gemfile
+├── Gemfile.lock
+├── _config.yml
+├── config.rb
+├── feed.xml
+└── index.html
+```
 
 ---
 
 ## 📜 License
 
-[MIT License](LICENSE) © Agustealo Johnson
+Licensed under the [MIT License](LICENSE).
+You are free to modify, use, and even sell — just give credit where it’s due.
 
 ---
+
+## ✍️ Credits
+
+**Design & Code:** Agustealo Johnson
+**Tech Stack:** Jekyll, HTML5, CSS3, JavaScript
+**Inspiration:** Minimalism + Developer Power
+
+---
+
+## 🤝 Contribute
+
+PRs welcome! Open issues, fix bugs, add features. Let’s build together.
+[→ Fork on GitHub](https://github.com/agustealo/jekyll-twilight)
+
+---
+
+## 📬 Contact
+
+**Author:** Agustealo Johnson
+📧 Email: [agustealo.j@gmail.com](mailto:agustealo.j@gmail.com)
+🌐 [agustealo.com](https://agustealo.com)
+
+---
+
+## 🚀 See It Live
+
+👉 [🌐 Live Demo](https://agustealo.github.io)
+
+---
+
 
 <small>Built with ❤️ by [Agustealo Johnson](https://agustealo.com) • Inspired by a decade of Karbon innovation • Powered by Jekyll</small>
